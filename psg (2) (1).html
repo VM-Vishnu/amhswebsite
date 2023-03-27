@@ -1,0 +1,70 @@
+<html>
+<meta http-equiv="refresh" content="300">
+
+<head>
+<title>AUTOMATIC MATERIAL HANDLING SYSTEM</title>
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+
+
+<br>
+<br>
+<br>
+
+<body style="background-color:WHITE; background-image: url('https://tse1.mm.bing.net/th?id=OIP.tuiQk6M593HxFLi0pshQwAHaFr&pid=Api&P=0');"style="width:2000px;height:900px;background-repeat: no-repeat;">
+<center>
+
+<br>
+<br>
+<br>
+<h1>AUTOMATIC MATERIAL HANDLING IN </h1>
+<h2>INVENTORY MANAGEMENT SYSTEM </h2>
+<button onclick="One()" class="btn btn-primary">Pick</button>
+<button onclick="Two()" class="btn btn-secondary">Place</button>
+
+</center><br>
+<center>
+
+<div hidden>
+    <span>ENTER MODE:</span>
+    <span id="number"></span>
+</div>
+<form action="https://api.thingspeak.com/update?api_key=OCXXZXE5U6VZQQVG&" method="post" target="_blank">
+
+
+<script>
+    function One(){
+        document.getElementById("number").innerHTML = "1";
+    }
+</script>
+
+<script>
+    function Two(){
+        document.getElementById("number").innerHTML = "2";
+    }
+</script>
+
+<br><br>
+
+ROW NUMBER : <input type="number" name="field2" min="1" max="3"><br><br>
+
+COLOUMN NUMBER : <input type="number" name="field3" min="1" max="3"><br><br>
+
+<button type="submit"> START </button>
+
+
+<button onclick="window.location.href='#'"> COMPLETE </button>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</form>
+<iframe id='track' frameborder="0" scrolling="no" width="1" height="1">
+</script>
+</head>
+</center>
+</body>
+</head>
+</html>
